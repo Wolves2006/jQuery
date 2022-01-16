@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    background:url(/Fish.jpg) center/cover no-repeat fixed;
+    overflow: hidden;
+}
+.logo{
+    font-family: "Comfortaa", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(255, 255, 255) ;
+}
+.logo span{
+    color: rgb(251, 255, 0);
+}
+li, a, button{
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    backdrop-filter: blur(50px) ;
+}
+.nav_link li{
+    display:inline-block;
+    padding: 0px 20px;
+
+}
+nav li a{
+    color: #FFF;
+}
+nav li a::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    border-radius: 5px;
+    background: rgb(143, 181, 253);
+    display: block;
+    margin: auto;
+    transition: .3s;
+}
+
+nav li a:hover::after{
+    width: 50%;
+}
+
+button{
+    padding: 8px 10px;
+    border-radius: 25px;
+    background: none;
+    border:none;
+    color: #fff;
+    background:rgba(135, 207, 235, 0.316);
+}
+button:hover{
+    background:rgba(135, 207, 235, 0.59);
+
+}
